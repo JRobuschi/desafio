@@ -1,0 +1,29 @@
+<%- include('header') -%>
+<H1>Edit Operator</H1>
+<form action="/operators/edit/<%=operator.id%>" method="POST">
+    <div>
+        <label for="">Name</label>
+        <input type="text" name="name" value="<%=operator.name%>">
+    </div>
+    <div>
+        <label for="">Surname</label>
+        <input type="text" name="surname" value="<%=operator.surname%>">
+    </div>
+    <div>
+        <label for="">User Name</label>
+        <input type="text" name="userName" value="<%=operator.userName%>">
+    </div>
+    <div>
+        <label for="">Password</label>
+        <input type="password" name="password" value="<%=operator.password%>">
+    </div>
+    <div>
+        <label for="">Status</label>
+        <select name="status" >
+            <option value="on">ON</option>
+            <option value="off">OFF</option>
+        </select>
+    </div>
+    <button type="submit">Crear</button>
+</form>
+<%- include('footer') -%>

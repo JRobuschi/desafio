@@ -1,0 +1,11 @@
+<%- include('header') -%>
+    <h1>List operators</h1>
+    <ul>
+        <% for (let i = 0; i < array.length; i++) { %>
+            <li>
+                <%=operators[i].name%>
+            </li>
+       <% }  %>  
+    </ul>
+  
+<%- include('footer') -%>

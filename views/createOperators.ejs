@@ -1,0 +1,32 @@
+<%- include('header') -%>
+
+
+    
+<H1>Create Operator</H1>
+<form action="/operators" method="POST">
+    <div>
+        <label for="">Name</label>
+        <input type="text" name="name" required>
+    </div>
+    <div>
+        <label for="">Surname</label>
+        <input type="text" name="surname" required>
+    </div>
+    <div>
+        <label for="">User Name</label>
+        <input type="text" name="userName" required>
+    </div>
+    <div>
+        <label for="">Password</label>
+        <input type="password" name="password" required>
+    </div>
+    <div>
+        <label for="">Status</label>
+        <select name="status" required>
+            <option value="on">ON</option>
+            <option value="off">OFF</option>
+        </select>
+    </div>
+    <button type="submit">Crear</button>
+</form>
+<%- include('footer') -%>

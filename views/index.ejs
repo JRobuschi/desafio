@@ -1,0 +1,17 @@
+<%- include('header') -%>
+
+
+<form action="/operators/create" method="POST" id="sign-in" >
+    <h1>Login</h1>
+
+    <label for="email"></label>
+    <input type="email" placeholder="Ingrese su mail aquí"  name="email" required>
+    
+
+    <label for="password"></label>
+    <input type="password" placeholder="Ingrese su contraseña aquí" name="password" required>
+   
+    
+    <button type="submit">Login</button>
+</form>
+<%- include('footer') -%>
